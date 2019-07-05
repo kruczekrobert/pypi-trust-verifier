@@ -72,5 +72,10 @@ if sys.argv[1] == "run":
                     print(i, f_package, "X")
 
     print(f'Verified: {len(verified)}, Not Verified: {len(not_verified)}, All: {len(package_list)}')
-    print("Verified", verified)
-    print("Not verified", not_verified)
+    print('Verified:')
+    for verif in verified:
+        print(verif)
+    print("------------------------------------------")
+    print("Not Verified:")
+    for not_verif in not_verified:
+        print(not_verif)
