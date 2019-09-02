@@ -2,7 +2,9 @@
 Based on the sources, it checks the level of trust of the package :)
 
 # Usage
-'''bash
-verify.py run <github-username> <password> <less than year> <less than stars> <less than watchers>
-'''
+Copy requirements.txt from your project into ptv folder and run:
+```bash
+python checker.py
+```
+Wait for report.txt file enjoy ;)
 
