@@ -59,7 +59,7 @@ def verify_requirements_file():
                 req=requests.get('https://pypi.org/project/{}/'.format(_package))
             )
             if api_link is not None:
-                api_req = requests.get(api_link)
+                api_req = requests.get(api_link, auth=(github_login, github_password))
                 verified_list.append(_package) if is_verified(api_req) else not_verified_list.append(_package)
             else:
                 verified_list.append(_package) if is_top_downloaded(_package) else not_verified_list.append(_package)
