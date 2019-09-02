@@ -6,5 +6,8 @@ Copy requirements.txt from your project into ptv folder and run:
 ```bash
 python checker.py
 ```
-Wait for report.txt file enjoy ;)
+Type your github username and password,
+Wait for report file,
+
+Enjoy ;)
 
